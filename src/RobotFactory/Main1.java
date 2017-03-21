@@ -21,7 +21,7 @@ public class Main1 {
 		System.out.println("If you want to ask new name for robot press 3");
 		a=sc.nextInt();
 		if( a==3){
-		robot.askName();
+		robot.giveName();
 		}
 		
 	}

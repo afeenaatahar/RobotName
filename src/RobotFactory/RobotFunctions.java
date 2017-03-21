@@ -4,7 +4,6 @@ public interface RobotFunctions {
 	
 	void giveName();
 	void resetRobot();
-	void askName();
 	
 	
 }
