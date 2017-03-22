@@ -10,7 +10,7 @@ public class ManageRobot implements RobotFunctions {
 		str+=this.randomLetters1();
 		str+=this.randomLetters1();
 		str+=this.randomNumber();
-		System.out.println("I am "+str);
+		
 	}
 
 	private char randomLetters1() {
@@ -23,19 +23,23 @@ public class ManageRobot implements RobotFunctions {
 
 	private int randomNumber() {
 		Random rand = new Random();
-		int r = rand.nextInt(1000) + 100;
+		int r = rand.nextInt(900) + 100;
 		return r;
 
 	}
 
 	public void resetRobot() {
 		str = "";
-		System.out.println("I am "+str);
+		
 	}
 
 	public void askName() {
 		 giveName();
 
+	}
+
+	public String getName() {
+		return str;
 	}
 
 }
